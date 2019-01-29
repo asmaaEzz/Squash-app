@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_below="@layout/app_bar_main"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mainActivityPhoto"
+            android:layout_height="300dp"
+            android:layout_width="300dp" />
+        <Button
+            android:background="@color/colorPrimary"
+            android:layout_margin="30dp"
+            android:id="@+id/startbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/startbtn"
+            android:textColor="#fff"
+            android:layout_below="@+id/mainActivityPhoto"
+            />
+
+        <Button
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/startbtn"
+            android:id="@+id/teacherbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teacherbtn"/>
+        <Button
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/startbtn"
+            android:layout_gravity="end"
+            android:id="@+id/professorsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/professorsbtn"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
